@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description"content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title> HTML5 UI </title>
+
+	 <!-- Plugin -->
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/mainstylesheet.css">
+
+
+
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="mtb-30 bg-white p-20 br-3 form-holder">
+					<form action="#" class="syn-form p-20">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									Your Name 
+
+								</div>
+
+								<div class="col-sm-8">
+									<input type="text" id="name" class="form-control" placeholder="Might we inquire your name" />
+								</div>
+							</div>  <!-- End Row -->
+						</div>  <!-- End form group-->
+	                 
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									<p>
+										Gender	
+									</p>
+								</div> <!-- End Col 3 -->
+
+								<div class="col-sm-8">
+									<ul class="ul-ib">
+										<li>
+											<input type="radio" class="form-control" id="male" name="gender">
+					                     	<label for="male"> 
+					                     		  <div class="radiobox-holder">
+										         		 <span class="fa fa-circle"></span>
+										          </div> 
+										          Male
+
+					                     	 </label>
+										</li>
+										<li>
+											<input type="radio" class="form-control" id="female" name="gender">
+				                     		<label for="female"> 
+				                     		  <div class="radiobox-holder">
+									         		 <span class="fa fa-circle"></span>
+									          </div> 
+									          Female
+										</li>
+									</ul>
+								</div> <!-- End Col 9 -->
+							</div> <!-- End row -->
+						</div>  <!-- End Form group -->
+
+
+
+						<div class="form-group">
+								<div class="row">
+									<div class="col-sm-4">
+										<p>
+											Drinks You Like Most 
+										</p>
+									</div>
+									
+									<div class="col-sm-8">
+											<div class="form-group">
+												<input type="checkbox" class="form-control" id="tea" checked>
+											    <label for="tea">
+										          <div class="checkbox-holder">
+										         		 <span class="fa fa-check"></span>
+										          </div> 
+									         	  I Like Tea.
+											     </label>
+											</div> <!-- End Form group -->
+
+
+											<div class="form-group">
+												<input type="checkbox" class="form-control" id="coffee"/>
+											    <label for="coffee">
+										          <div class="checkbox-holder">
+										         		 <span class="fa fa-check"></span>
+										          </div> 
+									         	  I Like Coffee.
+											     </label>
+											</div> <!-- End Form group -->
+
+
+
+									
+
+									        <div class="form-group">
+													<input type="checkbox" class="form-control" id="check2"/>
+											        <label for="check2">
+												          <div class="radiobox-holder">
+												         		 <span class="fa fa-circle font-8"></span>
+												          </div> 
+											         	  I Like Orange Juice.
+											        </label>
+											</div> <!-- End Form group -->
+
+											 <div class="form-group">
+													<input type="checkbox" class="form-control" id="check3"/>
+											        <label for="check3">
+												          <div class="radiobox-holder">
+												         		 <span class="fa fa-circle font-8"></span>
+												          </div> 
+											         	  I like Cold Drinks.
+											        </label>
+											</div> <!-- End Form group -->
+									</div> <!-- End Col 9 -->
+								</div> <!-- End Row -->
+						</div> <!-- End Form group -->
+
+
+						
+
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									Number
+
+								</div>
+
+								<div class="col-sm-8">
+									<input type="number" min="0" max="10" step="1" value = "0" class="form-control" placeholder="01" />
+
+								</div>
+							</div>  <!-- End Row -->
+						</div>  <!-- End form group-->
+
+
+
+							       
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									<label for="comments">Comments</label>
+								</div>  <!-- End Col 3 -->
+								<div class="col-sm-8">
+									<textarea class="form-control" placeholder="Write down your comment here."></textarea>
+								</div>  <!-- End Col 9 -->
+							</div>
+						</div> <!-- End Form group -->
+
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									SMS Alert 
+								</div>
+								<div class="col-sm-8">
+									<div class="switch-holder">
+							      <input id="switch" type="checkbox" class="switch-input" />
+							      <label for="switch" class="switch-label"> Switch </label>
+								    </div>  
+								</div> <!-- End col 9 -->
+							</div>  <!-- End Row -->
+						</div>  <!-- End Form Group -->
+					
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+										Newsletter 
+								</div>
+								<div class="col-sm-8">
+									<div class="switch-holder">
+										<input id="switch-label" type="checkbox" class="switch-input" />
+										<label for="switch-label" class="switch-label"> Switch </label>
+									</div> <!-- End Switch Div -->	
+
+								</div> <!-- End col 9 -->
+							</div> <!-- End Row -->
+						</div> <!-- End form Group -->
+
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+										Your Favorite color
+								</div>
+								<div class="col-sm-8">
+									<select id="color" class="form-control dropdown">
+										<option value="white">White</option>
+										<option value="white">Black</option>
+										<option value="white">Green</option>
+										<option value="white">Blue</option>
+										<option value="white">Yellow</option>
+										<option value="white">Orange</option>
+										<option value="white">Red</option>
+										<option value="white">Blue</option>
+										<option value="white">Yellow</option>
+										<option value="white">Orange</option>
+										<option value="white">Red</option>
+										<option value="white">Blue</option>
+										<option value="white">Yellow</option>
+										<option value="white">Orange</option>
+										<option value="white">Red</option>
+									</select>
+								</div>  <!-- End Col 8 -->
+						    </div> <!-- End Row -->
+						</div> <!-- End Form Group -->
+
+					
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									Date of Birth (HTML5)
+								</div>
+								<div class="col-sm-8">
+									<input type="date" max="2000-01-01" min="1920-01-01" class="form-control" placeholder="Date Of Birth">	
+								</div>
+							</div> <!-- End Row -->
+						</div> <!-- End Form Group -->
+
+
+
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-4">
+									Background Color 
+								</div>
+								<div class="col-sm-8">
+									<input type="color" id="colorPicker" value="#D2D2D2" class="form-control" placeholder="Please choose a color">
+								</div>
+							</div> <!-- End Row -->
+						</div> <!-- End Form Group -->
+
+					
+ 				  </form> <!-- End Syn Form -->
+				</div>   <!-- End MTB 30-->
+			</div>  <!-- End Col 12 -->
+		</div>  <!-- End row -->
+	</div>  <!-- End -->
+
+
+</body>
+</html>

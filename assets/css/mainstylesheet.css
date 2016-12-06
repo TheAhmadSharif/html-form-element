@@ -1,0 +1,374 @@
+/*
+Sipml5
+Version: 1.0
+Designed By: Synchronous Team
+*/
+
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans|Lato|Droid+Sans);
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #B7B7B7;
+    color: #212121;
+    margin: 0;
+    font-size: 12px;
+    min-height: 800px;
+}
+
+/** 3.1 Margin and padding utilities **/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+.mtb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul,ol,li {
+  list-style: none;
+}
+
+ul.ul-ib > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* Form Style */
+input {
+    font-family: inherit;
+    line-height: normal;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+}
+
+.form-control {
+    margin: 0;
+    box-shadow: none;
+    outline: 0;
+    border-radius: 2px;
+    font-size: inherit;
+}
+
+.form-control[readonly]{
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+::-webkit-color-swatch,::-moz-color-swatch {
+        border: none;
+    }
+::-moz-color-swatch {
+        border: none;
+    }
+.form-control:focus, .form-control:active {
+    border-color: #bbb;
+    box-shadow: none;
+    outline: 0;
+}
+
+
+/* Checkbox */
+label {
+    font-weight: normal;
+    line-height: 16px;
+}
+
+form input[type="radio"],form input[type="checkbox"] {
+    display: none;
+    opacity: 0;
+}
+.checkbox-holder {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border: 1px solid #BBB;
+    text-align: center;
+    line-height: 14px;
+    margin-right: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.radiobox-holder {
+    font-size: 13px;
+    border-radius: 40px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 1px solid #BBB;
+    text-align: center;
+    line-height: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+}
+.checkbox-holder span {
+    font-size: 11px;
+    opacity: 0;
+    color: #666;
+    vertical-align: middle;
+
+}
+.radiobox-holder span {
+    font-size: 7px;
+    opacity: 0;
+    color: #666;
+}
+
+input:checked+label span {
+  opacity: 1;
+}
+input:checked .radiobox-holder span {
+    font-size: 5px !important;
+}
+input[type="radio"]:checked+label span {
+  font-size: 7px !important;
+}
+
+
+
+
+
+/* Start Switch */
+
+.switch-holder {
+  position: relative;
+  display: inline-block;
+}
+.switch-input {
+  display: none;
+}
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 20px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.switch-label:before,
+.switch-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.switch-label:before {
+  width: 100%;
+  height: 100%;
+  background-color: #DEDEDE;
+  border-radius: 9999em;
+  -webkit-transition: background-color 0.25s ease;
+          transition: background-color 0.25s ease;
+}
+.switch-label:after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #FFF;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+  -webkit-transition: left 0.25s ease;
+          transition: left 0.25s ease;
+}
+
+.switch-input:checked + .switch-label:before {
+  background-color: #808080;
+}
+.switch-input:checked + .switch-label:after {
+  left: 24px;
+}
+
+/* End Switch */
+
+/* Start Alt Switch */
+
+.switch-input {
+    opacity: 0;
+    display: none;
+}
+
+.switch-label {
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+  position: relative;
+  z-index: 0;
+  text-indent: 0%;
+     -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+   transition: left 0.5s ease;
+}
+
+.switch-label::before {
+  content: '';
+  background-color: #DEDEDE;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  color: #FFF;
+  cursor: pointer;
+  left: 0;
+
+     -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+   transition: left 0.5s ease;
+
+
+}
+
+.switch-label::after {
+    content: '';
+    cursor: pointer;
+    width: 48%;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 300;
+    left: 0;
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    box-shadow: -1px 0px 2px #888888;
+
+
+}
+
+.switch-input:checked + .switch-label::before {
+  background-color: #808080;
+
+
+}
+
+.switch-input:checked + .switch-label::after {
+    left: 30px;
+    top: 1px;
+    height: 23px;
+    border: 0;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+/* End Alt Switch */
+
+.dob-icon {
+    font-size: 20px;
+    top: 7px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.form-holder {
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 760px;
+    background: #FFF;
+    padding: 30px;
+}
+
+
+input[type="file"] {
+  opacity: 0.4;
+  position: relative;
+  z-index: 200;
+}
+
+
+
+/* Input Type Range Style */
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+/* Input Type Radio  Firefox*/
+.firefox input[type=range]::-moz-range-track {
+    border-radius: 8px;
+    height: 7px;
+    border: 1px solid #bdc3c7;
+    background-color: #fff;
+}
+.firefox input[type=range]::-moz-range-thumb {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* IE Style */
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+    background: transparent;
+}
+input[type="range"]::-ms-track {
+    border-radius: 8px;
+    height: 7px;
+    border: 1px solid #bdc3c7;
+    background-color: #fff;
+}
+input[type="range"]::-ms-thumb {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* End Input Type Radio*/
+
+
+.file-upload-btn {
+  background-color: #F2F2F2;
+  width: 100px;
+  height: 40px;
+  content: 'Upload';
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+
+.form-control.dropdown {
+    min-width: 120px;
+    padding-right: 20px;
+    position: relative;
+    background-color: #FFF;
+    z-index: 10;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/select-arrow.png) no-repeat 98% 10px;
+    background-color: #FFF;
+}
